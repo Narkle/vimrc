@@ -21,15 +21,15 @@ elseif has("unix")
     set gfn=Monospace\ 11
 endif
 
-" Disable scrollbars (real hackers don't use scrollbars for navigation!)
-set guioptions-=r
-set guioptions-=R
-set guioptions-=l
-set guioptions-=L
+" Important!!
+if has('termguicolors')
+  set termguicolors
+endif
 
-" Colorscheme
-set background=dark
-" colorscheme peaksea
+
+
+let g:material_style = "oceanic"
+colorscheme material
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
